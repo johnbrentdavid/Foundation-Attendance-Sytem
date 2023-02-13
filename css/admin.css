@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formlayout {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border: solid #e5e5e5;
+    border-width: 0px;
+    border-radius:10px;
+    box-shadow: 0 6px 8px rgba(0,0,0,.1);
+    margin: 150px 20%;
+    padding: 0px;
+    background-color: #ececec;
+  }
+  
+.login_photo {
+    width: 45%;
+    height: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+  
+.form {
+    width: 55%;
+    height: 100%;
+    padding: auto 0;
+    letter-spacing: 1.5px;
+}
+  
+.form header {
+    font-weight: 700;
+    text-align: left;
+    font-size: 20px;
+}
+  
+main div span form div,
+main div span div div {
+    padding: 20px 10%;
+}
+  
+.form input{
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    margin-bottom: 1px;
+    background-color: transparent;
+    border-bottom: 2px solid #cac9c9;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .4s;
+    text-align: left;
+    letter-spacing: 1px;
+    height: 20px;
+    outline: none;
+}
+.formlayout form label{
+    font-weight: 400;
+}
+.formlayout form input:focus{
+    /*border-bottom: 2px solid #c3b798;*/
+    border-bottom:2px solid #1d72e2;
+}
+.form input::placeholder {
+    color: #e2e2e2;
+    text-align: left;
+}
+.formlayout form button {
+    width: 77%;
+    padding: 10px 0;
+    border: none;
+    background-color: rgb(94, 94, 94);
+    font-size: 18px;
+    /*color: #fafafa;*/
+    background: #dddddd;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-40%);
+    transition: .5s;
+}
+
+.formlayout form a{
+    color: #3c64b1;
+}
+.formlayout form a:hover{
+    color: #d6334c;
+}
+.formlayout form .loginbutton:hover {
+    background-color: #3374d6;
+}
+@media only screen and (max-width: 768px){
+    .formlayout{
+        border-radius: 10px 10px 0 0;
+    }
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+}
+
+
+
+.psd{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(150, 14, 25, 0.3), rgba(5, 100, 21, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    
+}
+
+.layer-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .layer-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .layer-video{
+        width: auto;
+        height: 100%;
+    }
+}
